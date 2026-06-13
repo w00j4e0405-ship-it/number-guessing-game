@@ -2,17 +2,17 @@ import random
 
 number = random.randint(1, 100)
 
-print("1부터 100 사이의 숫자맞춰보세요!")
+print("Guess a number between 1 and 100!")
 
 while True:
-    guess = int(input("숫자 입력:"))
+    guess = int(input("Enter a number: "))
 
     if guess < number:
-        print("더 큰숫자입니다!")
+        print("Try a higher number!")
     elif guess > number:
-        print("더 작은숫자입니다!")
+        print("Try a lower number!")
     else:
-        print("정답입니다!")
+        print("correct!")
         break
 
     
